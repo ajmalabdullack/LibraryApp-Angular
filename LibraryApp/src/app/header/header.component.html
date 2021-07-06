@@ -1,0 +1,17 @@
+
+<div class="navbar navbar-bright navbar-fixed-top" role="banner">
+    <div class="container">
+      <div class="navbar-header" >
+           <a routerLink="" class="navbar-brand">Home</a>
+            <a routerLink="books" class="navbar-brand">Books</a>
+            <a routerLink="authors"  class="navbar-brand" >Authors</a>
+            <a routerLink="addBook" *ngIf="auth.loggedIn()" class="navbar-brand">Add Book </a>
+            <a routerLink="addAuthor" *ngIf="auth.loggedIn()" class="navbar-brand">Add Author</a>
+            <a routerLink="login" *ngIf="!auth.loggedIn()" class="navbar-brand" >Login</a>
+            <a routerLink="signup" *ngIf="!auth.loggedIn()" class="navbar-brand">SignUp</a>
+            <a *ngIf="auth.loggedIn()" style="cursor:pointer" class="navbar-brand" (click)="logoutUser()">Logout</a>
+            
+      </div>
+    </div>
+</div>
+

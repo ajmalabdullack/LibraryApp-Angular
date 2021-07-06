@@ -1,0 +1,80 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>Login
+            <p class="lead"></p>
+          </h1>
+        </div>
+        <div class="col-md-5">
+          <div class="well well-lg"> 
+            <div class="row">
+              <div class="col-sm-12">
+                
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-spacer"> </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+  </div>
+  
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
+        
+        <div class="panel">
+          <div class="panel-body">
+            
+            
+            
+            <!--/stories-->
+             <!-- login form strats here -->
+            <div class="row loginform-cont">  
+        <div class="col-lg-4 loginform ">
+          <h1 class="login-heading">Login</h1>
+           <form  (ngSubmit)="loginUser()">
+            <label for="Email">Email</label>
+            <input type="email" class="form-control" #email="ngModel" id="email" [(ngModel)]="user.email" pattern="^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+)[.]([a-z]{2,3})(.[a-z]{2,3})?$" placeholder="email@example.com" name="email" required />
+            <label for="error" class="text-danger" *ngIf="email.touched && email.invalid" >Invalid Email</label><br>
+           
+          
+            <label for="password">Password</label>
+            <input type="password" class="form-control" #password="ngModel" [(ngModel)]="user.password" id="password" placeholder="Password" name="password" required />
+            <label for="error" class="text-danger" *ngIf="password.touched && password.invalid">Invalid Password</label><br>
+  
+            <button type="submit" id="submit"  class="btn btn-primary btnlogin" >Login</button> <br>
+        </form>
+      </div>  
+              
+    </div>
+            
+     
+            <hr>
+            
+            <!--/stories-->
+            
+            
+            <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+          
+            
+          </div>
+        </div>
+                                                                                         
+                                                      
+                                                        
+         </div><!--/col-12-->
+    </div>
+  </div>

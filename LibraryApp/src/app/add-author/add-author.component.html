@@ -1,0 +1,94 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>Add Author
+            <p class="lead"></p>
+          </h1>
+        </div>
+        <div class="col-md-5">
+          <div class="well well-lg"> 
+            <div class="row">
+              <div class="col-sm-12">
+                
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-spacer"> </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+  </div>
+  
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
+        
+        <div class="panel">
+          <div class="panel-body">
+            
+            
+            
+            <!--/stories-->
+             <!-- sign up form strats here -->
+             <div class=" addauthorform-cont">
+            <div class="row addauthorform ">  
+             
+        <div class="col-lg-4  ">
+          <h1 class="addauthor-heading">Add Author <br> Here</h1>
+           <p class="h6"></p>
+        <form  (ngSubmit)="AddAuthor()" enctype="multipart/form-data">
+            
+            <label for="Author name">Author Name</label>
+            <input type="text" class="form-control" id="authorname" [(ngModel)]="authorItem.author" placeholder="Author Name" required name="author"/>
+            <label for="error" id="authorname-error"></label><br>
+           
+          
+            <label for="Books name">Books Name</label>
+            <input type="text" class="form-control"  id="" [(ngModel)]="authorItem.books" placeholder="Books Name" required name="books"/>
+            <label for="error" id="booksname-error"></label><br>
+  
+            <label for="language">Language</label>
+            <input type="text" class="form-control"  id="" [(ngModel)]="authorItem.language" placeholder="Language" required name="language"/>
+            <label for="error" id="language-error"></label><br>
+  
+            <label for="image">ImageUrl</label>
+            <input type="text" class="form-control"  id="" [(ngModel)]="authorItem.image" placeholder="Image" required name="image"/>
+            <label for="error" id="img-error"></label><br>
+  
+          <button type="submit" id="submit" class="btn btn-primary" >Add Author</button> <br>
+        </form>
+      
+      </div>  
+              
+    </div>
+  </div>
+            
+     
+            <hr>
+            
+            <!--/stories-->
+            
+            
+            <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+          
+            
+          </div>
+        </div>
+                                                                                         
+                                                      
+                                                        
+         </div><!--/col-12-->
+    </div>
+  </div>
